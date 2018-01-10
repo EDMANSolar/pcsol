@@ -1,16 +1,18 @@
-## Load of input and output datasets for Cabauw and Carpentras
-setwd('~/GitHub/pcsol/data_example')
-load('data.RData')
-
-# Load tdr and solaR libraries
+# Load tdr and solaR packages
 library(tdr)
 library(solaR)
 
-setwd('~/GitHub/pcsol/R_code')
-source('clearSky.R')
-source('csMother.R')
+## Set the working directory, using the folder where the repository has been cloned.
+## Example: 
+## setwd('~/GitHub/pcsol/')
 
-BSRNcc <- read.csv('~/GitHub/pcsol/data_example/stations.csv')
+## Load of input and output datasets for Cabauw and Carpentras
+load('data_example/data.RData')
+BSRNcc <- read.csv('data_example/stations.csv')
+
+## Load code
+source('R_code/clearSky.R')
+source('R_code/csMother.R')
 
 ##################################################################
 ## Load of models
