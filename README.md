@@ -37,7 +37,7 @@ The function `clearSky` has three arguments:
 - `meteo`: a time series of meteorological measurements, including the
   variables required by the corresponding model. This time series must
   be a `zoo` object (see [zoo
-  package](https://cran.r-project.org/web/packages/zoo/).
+  package](https://cran.r-project.org/web/packages/zoo/)).
 
 - `loc`: coordinates of the location where the model is to be
   evaluated. It must be a `list` or `data.frame` with elements `lon`
