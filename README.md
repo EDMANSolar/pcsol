@@ -66,7 +66,7 @@ BSRNcc <- read.csv('data_example/stations.csv')
 For example, the next code evaluates the ASHRAE1972 model in Cabauw:
 
 ```R
-cabauwASHRAE <- clearSky(cabauw, BSRNcc[1, ], "ASHRAE1972")
+cabauwASHRAE <- clearSky(meteo = cabauw, loc = BSRNcc[1, ], model = "ASHRAE1972")
 ```
 
 The result is a `zoo` object with three components, `G0`, `D0`, and
