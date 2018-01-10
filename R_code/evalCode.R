@@ -1,6 +1,6 @@
 # Load tdr and solaR packages
 library(tdr) ## The following code needs version >= 0.13
-library(solaR)
+library(solaR) ## Required by the function clearSky
 
 ## Set the working directory, using the folder where the repository has been cloned.
 ## Example: 
