@@ -25,11 +25,13 @@ Use the next code to load the required package,
 [`solaR`](https://oscarperpinan.github.io/solar/), configure the
 working directory, and load the functions, and the list of models: 
 
-`
+```R
 setwd('NAME_OF_YOUR_FOLDER') ## replace the text
+
 source('R_code/clearSky.R')
+
 source('R_code/csMother.R')
-`
+```
 
 The function `clearSky` has three arguments:
 - `meteo`: a time series of meteorological measurements, including the
@@ -47,30 +49,32 @@ The function `clearSky` has three arguments:
   
 The repository includes the two datasets used in the paper:
 
-`
+```R
+## cabauw data.frame
 load('data_example/cabauw.RData')
+## carpentras data.frame
 load('data_example/carpentras.RData')
-`
+```
 
 The coordinates of these stations are available in the `stations.csv`
 file located in the `data_example` folder:
 
-`
+```R
 BSRNcc <- read.csv('data_example/stations.csv')
-`
+```
 
 For example, the next code evaluates the ASHRAE1972 model in Cabauw:
 
-`
+```R
 cabauwASHRAE <- clearSky(cabauw, BSRNcc[1, ], "ASHRAE1972")
-`
+```
 
 The result is a `zoo` object with three components, `G0`, `D0`, and
 `Bn`. Next code display a comparison with the measurements:
 
-`
+```R
 plot(cabauwASHRAE$G0, cabauw$G0, xlab = 'model', ylab = 'measurements')
-`
+```
 
 The file `evalCode.R` in the `R_code` folder evaluates the whole set
 of models in the two stations, and creates target diagrams to show the
