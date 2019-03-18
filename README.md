@@ -1,7 +1,8 @@
 pcsol
 ====
 
-R code for the paper: "Clear sky solar irradiance models: a review of seventy models", Fernando Antonanzas, Ruben Urraca, Jesus Polo, Oscar Perpiñán, Rodrigo Escobar (under review in Renewable & Sustainable Energy Reviews).
+R code for the paper: "Clear sky solar irradiance models: a review of seventy models", Fernando Antonanzas, Ruben Urraca, Jesus Polo, Oscar Perpiñán, Rodrigo Escobar, Renewable and Sustainable Energy Reviews, Volume 107, 2019, Pages 374-387,
+ISSN 1364-0321,2019, [10.1016/j.rser.2019.02.032](https://doi.org/10.1016/j.rser.2019.02.032).
 
 Installation
 ----
